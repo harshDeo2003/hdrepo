@@ -1,6 +1,10 @@
-Commit message: "Create hello"
-...
-[Pipeline] stage
-[Pipeline] { (Hello)
-[Pipeline] echo
-Hello world
+pipeline {
+    agent any
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello world'
+            }
+        }
+    }
+}
